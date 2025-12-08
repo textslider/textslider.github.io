@@ -47,6 +47,9 @@ class InteractiveSliderGallery {
     <button class="gallery-nav-button next" id="nextPage" ${this.currentPage >= totalPages - 1 ? 'disabled' : ''}>
         <i class="fas fa-chevron-right"></i>
     </button>
+
+    <h2 class="title is-5">Explore interactive sliders that control various attributes in both images and videos!</h2>
+    <h2 class="title is-6">Please allow a few seconds for video examples to load.</h2>
       
       <div class="gallery-pagination" id="galleryPagination">
         ${this.renderPagination(totalPages)}
