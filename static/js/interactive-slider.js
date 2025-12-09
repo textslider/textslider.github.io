@@ -292,17 +292,17 @@ document.addEventListener('DOMContentLoaded', function() {
       numFrames: 10  // Adjust based on your actual image
     },
     {
-      imagePath: './static/images/interactive-slider-samples/smile-dog.pdf',
+      imagePath: './static/images/interactive-slider-samples/smile.jpg',
       prompt: 'smile',
       numFrames: 10  // Adjust based on your actual image
     },
     {
-      imagePath: './static/images/interactive-slider-samples/rustycar.pdf',
+      imagePath: './static/images/interactive-slider-samples/rustycar.jpg',
       prompt: 'rusty',
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/blonde.pdf',
+      imagePath: './static/images/interactive-slider-samples/blonde.jpg',
       prompt: 'blonde',
       numFrames: 10
     },
@@ -322,32 +322,32 @@ document.addEventListener('DOMContentLoaded', function() {
       numFrames: 10  // Adjust based on your actual image
     },
     {
-      imagePath: './static/images/interactive-slider-samples/surprised.pdf',
+      imagePath: './static/images/interactive-slider-samples/surprised.jpg',
       prompt: 'surprised',
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/clay.pdf',
+      imagePath: './static/images/interactive-slider-samples/clay.jpg',
       prompt: 'clay',
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/curlyhair.pdf',
+      imagePath: './static/images/interactive-slider-samples/curlyhair.jpg',
       prompt: 'curly hair',
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/age.pdf',
+      imagePath: './static/images/interactive-slider-samples/age.jpg',
       prompt: 'age',
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/winter.pdf',
+      imagePath: './static/images/interactive-slider-samples/winter.jpg',
       prompt: 'winter',
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/chubby.pdf',
+      imagePath: './static/images/interactive-slider-samples/chubby.jpg',
       prompt: 'chubby',
       numFrames: 10
     },

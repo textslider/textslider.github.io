@@ -44,47 +44,6 @@
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -132,7 +91,7 @@
               </span>
               <!-- Video Link. -->
               <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -162,7 +121,6 @@
 <!-- Interactive Slider Gallery Section -->
 <section class="interactive-slider-section">
   <div class="container">
-    <!-- <h2 class="title is-4">Image</h2> -->
     <div id="interactiveSliderGallery"></div>
   </div>
 </section>
@@ -173,12 +131,8 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/images/teaser.pdf"
-                type="video/mp4">
-      </video> -->
       <div>
-				<img src='static/images/teaser.pdf'>
+				<img src='static/images/teaser.jpg'>
 			</div>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">Text Slider</span> is a training-efficient method for continuous concept control that generalizes across diverse image and video synthesis frameworks without retraining, while greatly reducing training time and GPU memory usage, underscoring its lightweight and efficient design.
@@ -206,8 +160,8 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 
+    <!-- method -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
@@ -218,44 +172,35 @@
           (e.g., c_t: person, c_+: old person, and c_-: young person) derived from concept representations. 
           This enables continuous control over visual attributes across diverse model architectures, supporting both image and video synthesis tasks.
         </p>
-          
-        <img src='static/images/system-diagram.pdf'>
+        <br>
+        <img src='./static/images/system-diagram.jpg' width="600" height="600">
       </div>
     </div>
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-
+    <!-- Experiments -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Experiments</h2>
-        <h2 class="title is-4">Results on Text-to-Image Generation with SD-XL</h2>
+        <h2 class="title is-4">Results on Text-to-Image Generation</h2>
         <p>
-          Text Slider enables continuous attribute manipulation across diverse object categories, with controllable attribute intensity achieved by simply adjusting the inference-time scale.
+          Combining <a href="https://arxiv.org/abs/2307.01952">SD-XL</a> with Text Slider enables continuous attribute manipulation across diverse object categories, with controllable attribute intensity achieved by simply adjusting the inference-time scale.
         </p>
-        <img width="100%", src='static/images/t2i.pdf'>
+        <img width="100%", src='static/images/t2i.jpg'>
 
+        <br><br>
         <h2 class="title is-4">Results on Text-to-Video Generation</h2>
         <p>
-          Integrating AnimateDiff with Text Slider enables fine-grained and continuous attribute control across diverse object categories, such as person, hair, car, style, and scene, while preserving structural consistency throughout the video. For each video, representative frames are sampled to illustrate the gradual progression of attribute intensity over time.
+          Integrating <a href="https://animatediff.github.io/">AnimateDiff</a> with Text Slider enables fine-grained and continuous attribute control across diverse object categories, such as person, hair, car, style, and scene, while preserving structural consistency throughout the video. For each video, representative frames are sampled to illustrate the gradual progression of attribute intensity over time.
         </p>
-        <img width="100%", src='static/images/t2v.pdf'>
+        <img width="100%", src='static/images/t2v.jpg'>
 
+        <br><br>
         <h2 class="title is-4">Results on Slider Composition</h2>
         <p>
           We demonstrate the composability of Text Slider in both text-to-image (left) and text-to-video (right) generation by sequentially manipulating different attributes. 
           The proposed approach preserves structural consistency while enabling fine-grained control over the target concepts at each editing stage.
         </p>
-        <img width="100%", src='static/images/compose.pdf'>
+        <img width="100%", src='static/images/compose.jpg'>
 
       </div>
     </div>
@@ -268,23 +213,18 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- flux-sd3 -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Zero-shot Generalization to FLUX and SD-3</h2>
           <p>
-            Text Slider can be directly applied to transformer-based diffusion models such as FLUX.1-schnell and SD-3 without retraining, further demonstrating the strong generalizability of our method.
+            Text Slider can be directly applied to transformer-based diffusion models such as <a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">FLUX.1-schnell</a> and <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">SD-3</a> without retraining, further demonstrating the strong generalizability of our method.
           </p>
-          <img width="100%", src='static/images/flux-sd3.pdf'>
-          <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video> -->
+          <img width="100%", src='static/images/flux-sd3.jpg'>
         </div>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
+      <!-- real image editing -->
       <div class="column">
         <h2 class="title is-3">Real Image Editing</h2>
         <div class="columns is-centered">
@@ -292,109 +232,12 @@
             <p>
               By inverting real images with <a href="https://garibida.github.io/ReNoise-Inversion/">ReNoise</a> and applying our method, we achieve fine-grained attribute control on real images.
             </p>
-            <!-- <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video> -->
-            <img width="100%", src='static/images/real-image-edit.pdf'>
+            <img width="100%", src='static/images/real-image-edit.jpg'>
           </div>
 
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2> -->
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/> -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
-      <!-- </div>
-    </div> -->
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
 
   </div>
 </section>
@@ -403,11 +246,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{chiu2025text,
+    <pre><code>@inproceedings{chiu2025text,
   title={Text Slider: Efficient and Plug-and-Play Continuous Concept Control for Image/Video Synthesis via LoRA Adapters},
-  author={Chiu, Pin-Yen and Fang, I and Chen, Jun-Cheng and others},
-  journal={arXiv preprint arXiv:2509.18831},
-  year={2025}
+  author={Pin-Yen Chiu and I-Sheng Fang and Jun-Cheng Chen},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2026}
 }</code></pre>
   </div>
 </section>
@@ -415,15 +258,6 @@
 
 <footer class="footer">
   <div class="container">
-    <!-- <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
