@@ -277,21 +277,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Each sample should have: imagePath, prompt, and numFrames
   const samples = [
     {
-      imagePath: './static/images/interactive-slider-samples/smile.gif',
-      prompt: 'smile',
-      numFrames: 6  // Adjust based on your actual image
-    },
-    {
-      imagePath: './static/images/interactive-slider-samples/young.gif',
-      prompt: 'young',
-      numFrames: 9  // Adjust based on your actual image
-    },
-    {
-      imagePath: './static/images/interactive-slider-samples/pixar.gif',
-      prompt: 'pixar',
-      numFrames: 10  // Adjust based on your actual image
-    },
-    {
       imagePath: './static/images/interactive-slider-samples/smile.jpg',
       prompt: 'smile',
       numFrames: 10  // Adjust based on your actual image
@@ -307,19 +292,19 @@ document.addEventListener('DOMContentLoaded', function() {
       numFrames: 10
     },
     {
-      imagePath: './static/images/interactive-slider-samples/beard.gif',
-      prompt: 'beard',
-      numFrames: 10  // Adjust based on your actual image
+      imagePath: './static/images/interactive-slider-samples/smile.gif',
+      prompt: 'smile',
+      numFrames: 6
     },
     {
-      imagePath: './static/images/interactive-slider-samples/tropical.gif',
-      prompt: 'tropical',
-      numFrames: 9  // Adjust based on your actual image
+      imagePath: './static/images/interactive-slider-samples/young.gif',
+      prompt: 'young',
+      numFrames: 9
     },
     {
-      imagePath: './static/images/interactive-slider-samples/makeup.gif',
-      prompt: 'makeup',
-      numFrames: 10  // Adjust based on your actual image
+      imagePath: './static/images/interactive-slider-samples/pixar.gif',
+      prompt: 'pixar',
+      numFrames: 10
     },
     {
       imagePath: './static/images/interactive-slider-samples/surprised.jpg',
@@ -334,6 +319,21 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       imagePath: './static/images/interactive-slider-samples/curlyhair.jpg',
       prompt: 'curly hair',
+      numFrames: 10
+    },
+    {
+      imagePath: './static/images/interactive-slider-samples/beard.gif',
+      prompt: 'beard',
+      numFrames: 10
+    },
+    {
+      imagePath: './static/images/interactive-slider-samples/tropical.gif',
+      prompt: 'tropical',
+      numFrames: 9
+    },
+    {
+      imagePath: './static/images/interactive-slider-samples/makeup.gif',
+      prompt: 'makeup',
       numFrames: 10
     },
     {
